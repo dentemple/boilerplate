@@ -8,6 +8,7 @@ const PageNotFound = asyncComponent(() => import('../pages/PageNotFound'))
 const Routes = () => (
   <Switch>
     <Route exact path="/" component={HomePage} />
+    <Route exact path="/404" component={PageNotFound} />
     <Route component={PageNotFound} />
   </Switch>
 )
