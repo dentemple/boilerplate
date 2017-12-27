@@ -1,9 +1,17 @@
+import { ACTIONS } from '../types'
+
 const initialState = {
-  value: 42
+  value: 'Hello, world'
 }
 
 function testReducer(state = initialState, action) {
-  return state
+  switch (action.type) {
+    case ACTIONS.TEST_DISPATCH:
+      return { ...state, payload: action.payload }
+
+    default:
+      return state
+  }
 }
 
 export default testReducer

@@ -19,14 +19,14 @@ const RenderStore = props => {
   }
   return (
     <pre style={style}>
-      {JSON.stringify(props.state ? props.state : {}, null, 2)}
+      {JSON.stringify(props.store ? props.store : {}, null, 2)}
     </pre>
   )
 }
 
 const mapState = state => {
   return {
-    state: state
+    store: state
   }
 }
 
