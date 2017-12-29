@@ -1,10 +1,10 @@
-import { createStore, applyMiddleware } from 'redux'
-import thunk from 'redux-thunk'
-import { composeWithDevTools } from 'redux-devtools-extension/developmentOnly'
-import { routerMiddleware } from 'react-router-redux'
+import { createStore, applyMiddleware } from "redux"
+import { composeWithDevTools } from "redux-devtools-extension/developmentOnly"
+import { routerMiddleware } from "react-router-redux"
+import thunk from "redux-thunk"
 
-import history from '../util/history'
-import reducers from '../reducers'
+import reducers from "../reducers"
+import history from "../history"
 
 function configureStore(preloadedState) {
   const middlewares = [thunk, routerMiddleware(history)]
@@ -15,10 +15,10 @@ function configureStore(preloadedState) {
   const store = createStore(reducers, preloadedState, composedEnhancer)
 
   // Extends Hot Module Reloading to the Redux store
-  if (process.env.NODE_ENV !== 'production') {
+  if (process.env.NODE_ENV !== "production") {
     if (module.hot) {
-      module.hot.accept('../reducers', () => {
-        const newreducers = require('../reducers').default
+      module.hot.accept("../reducers", () => {
+        const newreducers = require("../reducers").default
         store.replaceReducer(newreducers)
       })
     }

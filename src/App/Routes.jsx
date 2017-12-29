@@ -1,9 +1,11 @@
-import React from 'react'
-import { Switch, Route } from 'react-router-dom'
-import asyncComponent from '../util/AsyncComponent'
+import React from "react"
+import { Switch, Route } from "react-router-dom"
+import asyncComponent from "../util/AsyncComponent"
 
-const HomePage = asyncComponent(() => import('../pages/HomePage'))
-const PageNotFound = asyncComponent(() => import('../pages/PageNotFound'))
+const HomePage = asyncComponent(() => import("../components/pages/HomePage"))
+const PageNotFound = asyncComponent(() =>
+  import("../components/pages/PageNotFound")
+)
 
 const Routes = () => (
   <Switch>

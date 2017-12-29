@@ -1,19 +1,20 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import { Provider } from 'react-redux'
-import { ThemeProvider } from 'styled-components'
-import { ConnectedRouter } from 'react-router-redux'
+import React from "react"
+import ReactDOM from "react-dom"
+import { Provider } from "react-redux"
+import { ThemeProvider } from "styled-components"
+import { ConnectedRouter } from "react-router-redux"
+
+import history from "./state/history"
+import configureStore from "./state/store"
+import theme from "./theme"
 
 // import registerServiceWorker from './util/registerServiceWorker'
-import history from './util/history'
-import configureStore from './store'
-import theme from './theme'
 
 const store = configureStore()
-const root = document.getElementById('root')
+const root = document.getElementById("root")
 
 let render = () => {
-  const App = require('./App').default
+  const App = require("./App").default
 
   ReactDOM.render(
     <ThemeProvider theme={theme}>
@@ -28,13 +29,14 @@ let render = () => {
 }
 
 // Configures Hot Module Reloading
-if (process.env.NODE_ENV !== 'production') {
+if (process.env.NODE_ENV !== "production") {
   if (module.hot) {
-    module.hot.accept('./App', () => {
+    module.hot.accept("./App", () => {
       setTimeout(render)
     })
   }
 }
 
 render()
+
 // registerServiceWorker()
