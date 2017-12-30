@@ -10,9 +10,8 @@ const RenderStore = props => {
   const style = {
     fontFamily: "monospace",
     lineHeight: "1.5",
-    width: "80%",
     minHeight: 100,
-    margin: 50,
+    margin: 40,
     padding: 20,
     backgroundColor: "#f3f3f3",
     border: "0.5px solid #777",

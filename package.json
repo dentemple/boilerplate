@@ -35,6 +35,9 @@
     "redux-devtools-extension": "^2.13.2"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,json,css}": ["prettier --no-semi --write", "git add"]
+    "src/**/*.{js,jsx,json,css}": [
+      "prettier --no-semi --write",
+      "git add"
+    ]
   }
 }

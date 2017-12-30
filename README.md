@@ -26,16 +26,17 @@ The following packages are in addition to what's already provided by Create Reac
 * [Code Splitting](https://serverless-stack.com/chapters/code-splitting-in-create-react-app.html)
 * [Hot Module Replacement (HMR)](https://webpack.js.org/concepts/hot-module-replacement/)
 * [Pre-commit auto-formatting](https://prettier.io/docs/en/precommit.html)
+* CSS Grid
 
 ## Folder Hierarchy
 
 > Warning: Opinions ahead!
 
-* React components: **Atomic Design**
+* Files: **Single-API**
 
-* Redux features: **Rails-style**
+* React: **Atomic(-like) Design**
 
-* File Hierarchy: **Single-API**
+* Redux: **Rails-style**
 
 ---
 
