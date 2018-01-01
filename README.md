@@ -4,7 +4,7 @@
 
 > A React/Redux boilerplate.
 
-This repo is for my own use.
+This repo is for my own use only.
 
 However, feel free to fork, clone, or copy!
 
@@ -18,25 +18,48 @@ The following packages are in addition to what's already provided by Create Reac
 * Dev: `prettier`, `lint-staged`, `redux-devtools-extension`
 * Styling: `styled-components`, `react-icons`
 * State: `redux`, `redux-thunk`
-* Routing: `react-router-dom` (v4), `react-router-redux`, `history`
+* Routing: `react-router-dom (v4)`, `react-router-redux`, `history`
 * Testing: `enzyme`
 
 ### Additional features
 
 * [Code Splitting](https://serverless-stack.com/chapters/code-splitting-in-create-react-app.html)
 * [Hot Module Replacement (HMR)](https://webpack.js.org/concepts/hot-module-replacement/)
-* [Pre-commit auto-formatting](https://prettier.io/docs/en/precommit.html)
+* [Auto-format on commit](https://prettier.io/docs/en/precommit.html)
 * CSS Grid
 
 ## Folder Hierarchy
 
-> Warning: Opinions ahead!
+### Components: **Atomic Design**
 
-* Files: **Single-API**
+Components follow the [Atomic Design](http://atomicdesign.bradfrost.com/) philosophy; however, React-friendly terms are used in place of the standard Chemistry metaphor.
 
-* React: **Atomic(-like) Design**
+* Atoms => `common/`
+* Molecules => `composition/`
+* Organisms => `features/`
+* Pages remain as `pages/`
 
-* Redux: **Rails-style**
+### Files: **Single-API**
+
+To better encourage a "black box" design approach, components are arranged to form a single point of entry.
+
+* ComponentName/
+  * index.jsx
+  * Presentational1.jsx
+  * Presentational2.jsx
+  * ...
+
+To reduce clutter, Presentational components can be nested within Container components.
+
+* ComponentName/
+  * index.js <<< contains redux's `connect()` hook
+  * UI/
+    * index.jsx <<< receives the smart props and handles lifecycle changes
+    * Presentational1.jsx
+    * Presentational2.jsx
+    * ...
+
+### Redux Tree: **Rails-style**
 
 ---
 
