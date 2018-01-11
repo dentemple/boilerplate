@@ -1,5 +1,5 @@
 import { injectGlobal } from "styled-components"
-// import FONT-NAME from "./fonts/PATH-TO-FONT"
+// import FONTNAME from "./fonts/PATHTOFONT"
 
 const theme = {
   fontPrimary: "sans-serif",
@@ -15,13 +15,18 @@ const theme = {
   }
 }
 
+/* 
+Syntax for adding local fonts:
+
+@font-face {
+  font-family: 'FONTNAME';
+  src: url(${FONTNAME}) format('FONTTYPE');
+  font-weight: normal;
+  font-style: normal;
+} 
+*/
+
 injectGlobal`
-  /* @font-face {
-    font-family: 'FONT-NAME';
-    src: url(${FONT - NAME}) format('FONT-TYPE');
-    font-weight: normal;
-    font-style: normal;
-  } */
   html, body {
     box-sizing: border-box;
     margin: 0;

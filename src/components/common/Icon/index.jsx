@@ -1,5 +1,5 @@
 import React, { Fragment } from "react"
-import ScreenReaderOnly from "./ScreenReaderOnly"
+import ScreenReaderOnly from "../ScreenReaderOnly"
 
 const Icon = ({ screenReader = "", children }) => (
   <Fragment>
