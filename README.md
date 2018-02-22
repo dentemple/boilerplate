@@ -6,7 +6,7 @@
 
 Feel free to fork, clone, or copy this repo!
 
-Even though this boilerplate is primarily for myself, it may provide useful insight into how certain technologies fit together.
+This boilerplate is primarily for myself; however, it may provide useful insight for you into how certain technologies fit together!
 
 ## Features
 
@@ -32,13 +32,6 @@ The following packages are in addition to what's already provided by Create Reac
 ## Folder Hierarchy
 
 ### Components: **Atomic Design**
-
-Components follow the [Atomic Design](http://atomicdesign.bradfrost.com/) philosophy; however, React-friendly terms are used in place of the standard Chemistry metaphor.
-
-* Atoms => `common/`
-* Molecules => `composition/`
-* Organisms => `features/`
-* Pages remain as `pages/`
 
 ### Redux Tree: **Rails-style**
 

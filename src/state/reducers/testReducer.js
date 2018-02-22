@@ -1,6 +1,6 @@
 import { ACTIONS } from "../types"
 
-const initialState = {
+export const initialState = {
   str: "Hello, world",
   val: 0
 }

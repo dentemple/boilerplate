@@ -1,5 +1,5 @@
 import { injectGlobal } from "styled-components"
-// import FONTNAME from "./fonts/PATHTOFONT"
+// import FONTNAME from "./assets/fonts/PATHTOFONT"
 
 const theme = {
   fontPrimary: "sans-serif",
@@ -37,7 +37,7 @@ injectGlobal`
   }
   *, *:before, *:after {
     box-sizing: inherit;
-    /* border: 0.01px solid pink; */
+    /* border: 0.01px solid pink; */ /* Dev only */
   }
 `
 
