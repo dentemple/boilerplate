@@ -1,6 +1,7 @@
 import React from "react"
 import { Switch, Route } from "react-router-dom"
-import asyncComponent from "../util/AsyncComponent"
+
+import asyncComponent from "util/AsyncComponent"
 
 const Routes = () => (
   <Switch>
@@ -10,9 +11,9 @@ const Routes = () => (
   </Switch>
 )
 
-const HomePage = asyncComponent(() => import("../components/pages/HomePage"))
+const HomePage = asyncComponent(() => import("components/pages/HomePage"))
 const PageNotFound = asyncComponent(() =>
-  import("../components/pages/PageNotFound")
+  import("components/pages/PageNotFound")
 )
 
 export default Routes

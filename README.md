@@ -28,6 +28,7 @@ The following packages are in addition to what's already provided by Create Reac
 * [Code Splitting](https://serverless-stack.com/chapters/code-splitting-in-create-react-app.html)
 * [Hot Module Replacement (HMR)](https://webpack.js.org/concepts/hot-module-replacement/)
 * [Auto-format on commit](https://prettier.io/docs/en/precommit.html)
+* Absolute file paths for components
 
 ## Folder Hierarchy
 

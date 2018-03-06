@@ -1,6 +1,7 @@
 import React from "react"
 import FaExclamation from "react-icons/lib/fa/exclamation"
-import Icon from "../../common/Icon"
+
+import Icon from "components/atoms/Icon"
 
 const Exclamation = () => (
   <Icon speak="Warning!">

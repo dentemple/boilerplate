@@ -4,7 +4,8 @@
 
 import React from "react"
 import { connect } from "react-redux"
-import { testDispatch } from "../state/actions"
+
+import { testDispatch } from "state/actions"
 
 const RenderStore = props => {
   const style = {

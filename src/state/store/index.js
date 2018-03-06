@@ -3,8 +3,8 @@ import { composeWithDevTools } from "redux-devtools-extension/developmentOnly"
 import { routerMiddleware } from "react-router-redux"
 import thunk from "redux-thunk"
 
-import reducers from "../reducers"
-import history from "../history"
+import reducers from "state/reducers"
+import history from "state/history"
 
 function configureStore(preloadedState) {
   const middlewares = [thunk, routerMiddleware(history)]

@@ -1,6 +1,7 @@
 import React from "react"
 import FaSpinner from "react-icons/lib/fa/spinner"
-import Icon from "../../common/Icon"
+
+import Icon from "components/atoms/Icon"
 
 const Spinner = () => (
   <Icon speak="Loading!">

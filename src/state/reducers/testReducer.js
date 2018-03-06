@@ -1,4 +1,4 @@
-import { ACTIONS } from "../types"
+import { ACTIONS } from "state/types"
 
 export const initialState = {
   str: "Hello, world",
