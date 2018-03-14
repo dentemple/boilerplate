@@ -11,7 +11,7 @@ const theme = {
   },
   colors: {
     black: "#333333" /* Charcoal Gray */,
-    white: "#ffffff"
+    white: "#fefefe"
   }
 }
 
@@ -31,15 +31,21 @@ injectGlobal`
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-    /* border: 0.01px solid pink; */ /* Dev only */
-  },
-  body {
     font-family: ${theme.fontPrimary};
     color: ${theme.black};
     background-color: ${theme.white};
+    font-size: 1.2em;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  },
+  body {
+    font-family: inherit;
+    color: inherit;
+    background-color: inherit;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: ${theme.fontSecondary};
   }
 `
 

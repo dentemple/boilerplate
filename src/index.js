@@ -1,5 +1,6 @@
 import React from "react"
 import ReactDOM from "react-dom"
+
 import { Provider } from "react-redux"
 import { ThemeProvider } from "styled-components"
 import { ConnectedRouter } from "react-router-redux"
@@ -17,13 +18,13 @@ let render = () => {
   const App = require("App").default
 
   ReactDOM.render(
-    <ThemeProvider theme={theme}>
-      <Provider store={store}>
+    <Provider store={store}>
+      <ThemeProvider theme={theme}>
         <ConnectedRouter history={history}>
           <App />
         </ConnectedRouter>
-      </Provider>
-    </ThemeProvider>,
+      </ThemeProvider>
+    </Provider>,
     root
   )
 }
