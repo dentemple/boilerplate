@@ -1,6 +1,6 @@
 import React from "react"
 
-import { Exclamation } from "components/atoms/Icon/Icons"
+import { Exclamation } from "components/common/Icons"
 
 const PageNotFound = () => (
   <div>

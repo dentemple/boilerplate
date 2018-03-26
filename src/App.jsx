@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import styled from "styled-components"
 
-import Routes from "App/Routes"
+import Routes from "pages/Routes"
 import RenderStore from "util/RenderStore"
 
 class App extends Component {
@@ -16,7 +16,8 @@ class App extends Component {
 }
 
 const Display = styled.div`
-  flex: 1;
+  display: flex;
+  flex-direction: column;
 
   /* @supports (display: grid) {
     display: grid;

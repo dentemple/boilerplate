@@ -3,7 +3,7 @@ import { injectGlobal } from "styled-components"
 
 const theme = {
   fontPrimary: "sans-serif",
-  fontSecondary: "monospace",
+  fontSecondary: "serif",
   screens: {
     tablet: "600px",
     landscape: "900px",
@@ -38,7 +38,7 @@ injectGlobal`
   }
   *, *:before, *:after {
     box-sizing: inherit;
-  },
+  }
   body {
     font-family: inherit;
     color: inherit;

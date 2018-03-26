@@ -1,6 +1,6 @@
 import React from "react"
 
-const HomePage = () => (
+const IndexPage = () => (
   <div style={{ margin: 10 }}>
     <h1>Home Page</h1>
     <p>
@@ -17,4 +17,4 @@ const HomePage = () => (
   </div>
 )
 
-export default HomePage
+export default IndexPage
