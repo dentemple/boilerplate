@@ -1,8 +1,8 @@
-import { ACTIONS } from "../types"
+import { TYPES } from "state/types"
 
 export function testDispatch() {
-  console.log("Action:", ACTIONS.TEST_DISPATCH)
+  console.log("Action:", TYPES.TEST_DISPATCH)
   return {
-    type: ACTIONS.TEST_DISPATCH
+    type: TYPES.TEST_DISPATCH
   }
 }

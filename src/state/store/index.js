@@ -17,8 +17,8 @@ function configureStore(preloadedState) {
   // Extends Hot Module Reloading to the Redux store
   if (process.env.NODE_ENV !== "production") {
     if (module.hot) {
-      module.hot.accept("../reducers", () => {
-        const newreducers = require("../reducers").default
+      module.hot.accept("state/reducers", () => {
+        const newreducers = require("state/reducers").default
         store.replaceReducer(newreducers)
       })
     }

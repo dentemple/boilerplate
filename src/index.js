@@ -9,6 +9,10 @@ import history from "state/history"
 import configureStore from "state/store"
 import theme from "theme"
 
+// Useful polyfills
+import "whatwg-fetch"
+import "babel-polyfill"
+
 // import registerServiceWorker from 'util/registerServiceWorker'
 
 const store = configureStore()

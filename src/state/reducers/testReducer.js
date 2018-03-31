@@ -1,4 +1,4 @@
-import { ACTIONS } from "state/types"
+import { TYPES } from "state/types"
 
 export const initialState = {
   str: "Hello, world",
@@ -7,7 +7,7 @@ export const initialState = {
 
 function testReducer(state = initialState, action) {
   switch (action.type) {
-    case ACTIONS.TEST_DISPATCH:
+    case TYPES.TEST_DISPATCH:
       return {
         ...state,
         str: "Action successfully dispatched!",

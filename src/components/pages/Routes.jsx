@@ -11,7 +11,9 @@ const Routes = () => (
   </Switch>
 )
 
-const IndexPage = asyncComponent(() => import("pages/IndexPage"))
-const PageNotFound = asyncComponent(() => import("pages/PageNotFound"))
+const IndexPage = asyncComponent(() => import("components/pages/IndexPage"))
+const PageNotFound = asyncComponent(() =>
+  import("components/pages/PageNotFound")
+)
 
 export default Routes

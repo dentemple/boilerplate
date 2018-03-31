@@ -1,16 +1,18 @@
-import React, { Component } from "react"
+import React, { Component, StrictMode } from "react"
 import styled from "styled-components"
 
-import Routes from "pages/Routes"
+import Routes from "components/pages/Routes"
 import RenderStore from "util/RenderStore"
 
 class App extends Component {
   render() {
     return (
-      <Display>
-        <Routes />
-        <RenderStore />
-      </Display>
+      <StrictMode>
+        <Display>
+          <Routes />
+          <RenderStore />
+        </Display>
+      </StrictMode>
     )
   }
 }

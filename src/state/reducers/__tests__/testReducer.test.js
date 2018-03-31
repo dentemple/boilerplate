@@ -1,5 +1,5 @@
-import { ACTIONS } from "../../types"
-import reducer, { initialState } from "../testReducer"
+import { TYPES } from "state/types"
+import reducer, { initialState } from "state/reducers/testReducer"
 
 describe("reducer", () => {
   it("should return the initial state", () => {
@@ -9,7 +9,7 @@ describe("reducer", () => {
   it("should handle TEST_DISPATCH", () => {
     expect(
       reducer(undefined, {
-        type: ACTIONS.TEST_DISPATCH
+        type: TYPES.TEST_DISPATCH
       })
     ).toEqual({
       ...initialState,
