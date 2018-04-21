@@ -1,4 +1,4 @@
-import React from "react"
+import React, { StrictMode } from "react"
 import ReactDOM from "react-dom"
 
 import { Provider } from "react-redux"
@@ -25,7 +25,9 @@ let render = () => {
     <Provider store={store}>
       <ThemeProvider theme={theme}>
         <ConnectedRouter history={history}>
-          <App />
+          <StrictMode>
+            <App />
+          </StrictMode>
         </ConnectedRouter>
       </ThemeProvider>
     </Provider>,
