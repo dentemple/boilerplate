@@ -1,23 +1,20 @@
-import React, { Component } from 'react'
-import logo from './logo.svg'
+import React, { Component, Fragment } from 'react'
+
+import Display from './Display'
+import GlobalStyle from './GlobalStyle'
+import Header from '../components/Header'
+import RenderStore from '../util/RenderStore'
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <header>
-          <img src={logo} alt="logo" style={{ width: 100 }} />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer">
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Fragment>
+        <GlobalStyle />
+        <Display>
+          <Header />
+          <RenderStore />
+        </Display>
+      </Fragment>
     )
   }
 }
