@@ -27,7 +27,7 @@ const StyledContainer = styled.header`
 
   /* box */
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 300px;
 
   /* text */
   color: white;

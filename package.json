@@ -2,15 +2,35 @@
   "name": "dens-react-boilerplate",
   "version": "1.0.0",
   "description": "Useful code snippets for new react projects.",
-  "author": "Denny Temple <dev@dentemple.com>",
+  "author": "Denny S. Temple <dev@dentemple.com>",
   "license": "MIT",
   "private": true,
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "analyze": "source-map-explorer build/static/js/main.*",
     "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.1.0",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.0.1",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
+    "reselect": "^4.0.0",
+    "source-map-explorer": "^2.0.1",
+    "styled-components": "^4.3.2",
+    "whatwg-fetch": "^3.0.0"
+  },
+  "devDependencies": {
+    "husky": "^3.0.0",
+    "lint-staged": "^9.1.0",
+    "prettier": "1.18.2",
+    "redux-devtools-extension": "^2.13.8"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -31,25 +51,5 @@
       "prettier --single-quote --no-semi --jsx-bracket-same-line --write",
       "git add"
     ]
-  },
-  "dependencies": {
-    "normalize.css": "^8.0.1",
-    "prop-types": "^15.6.2",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
-    "react-redux": "^5.1.1",
-    "react-router-dom": "^4.3.1",
-    "react-scripts": "2.0.4",
-    "redux": "^4.0.1",
-    "redux-thunk": "^2.3.0",
-    "source-map-explorer": "^1.6.0",
-    "styled-components": "^4.1.1",
-    "whatwg-fetch": "^3.0.0"
-  },
-  "devDependencies": {
-    "husky": "^1.1.2",
-    "lint-staged": "^7.3.0",
-    "prettier": "1.15.2",
-    "redux-devtools-extension": "^2.13.5"
   }
 }

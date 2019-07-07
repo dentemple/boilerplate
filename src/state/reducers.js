@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux'
 
-import testReducer from './testReducer'
+import testDispatch from './testDispatch'
 
 const reducers = combineReducers({
-  test: testReducer
+  test: testDispatch
 })
 
 export default reducers

@@ -6,7 +6,7 @@ import logo from './logo.svg'
 const Logo = () => <Image src={logo} alt='logo' />
 
 const Image = styled.img`
-  height: 40vmin;
+  height: 20vmin;
 `
 
 export default Logo

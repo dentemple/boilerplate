@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import { connect } from 'react-redux'
 
-import { testDispatch } from '../state/actions'
+import { testDispatch } from '../state/testDispatch'
 
 class RenderStore extends Component {
   static propTypes = {
@@ -15,31 +15,32 @@ class RenderStore extends Component {
     store: {}
   }
 
-  handleClick = () => this.props.handleClick()
-
   render() {
     const preStyle = {
-      fontFamily: 'monospace',
-      lineHeight: '1.5',
-      minHeight: 100,
-      margin: 40,
-      padding: 20,
+      // box
       backgroundColor: '#f3f3f3',
       border: '0.5px solid #777',
       borderRadius: 10,
+      minHeight: 100,
+      margin: 40,
+      padding: 20,
+
+      // text
+      fontFamily: 'monospace',
+      lineHeight: '1.5',
       textAlign: 'left'
     }
     const buttonStyle = {
       fontFamily: 'monospace'
     }
 
-    const { store } = this.props
+    const { handleClick, store } = this.props
 
     return (
       <pre style={preStyle}>
         {JSON.stringify(store, null, 2)}
         <p>
-          <button style={buttonStyle} onClick={() => this.handleClick()}>
+          <button style={buttonStyle} onClick={handleClick}>
             Test Dispatch
           </button>
         </p>
@@ -48,19 +49,15 @@ class RenderStore extends Component {
   }
 }
 
-const mapState = state => {
-  return {
-    store: state
-  }
-}
+const mapState = state => ({
+  store: state
+})
 
-const mapDispatch = dispatch => {
-  return {
-    handleClick: () => {
-      dispatch(testDispatch())
-    }
+const mapDispatch = dispatch => ({
+  handleClick: () => {
+    dispatch(testDispatch())
   }
-}
+})
 
 export default connect(
   mapState,
